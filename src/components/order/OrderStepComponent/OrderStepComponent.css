@@ -1,0 +1,341 @@
+.orderStep {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: .3s;
+  margin-top: 50px;
+}
+
+.orderStepHeader {
+  width: 100%;
+  padding: 24px 30px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.orderStepHeaderTitle {
+  padding: 0;
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.orderStepHeaderArrow {
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}
+
+.orderStepList {
+  width: 100%;
+  display: none;
+  align-items: stretch;
+  justify-content: space-around;
+  transition: .3s;
+  opacity: 0;
+  margin-top: 105px;
+  margin-bottom: 20px;
+  overflow-x: hidden;
+}
+
+.orderStepList .slick-slider {
+  width: 93%;
+}
+
+.orderStepSliderBtn {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  opacity: .4;
+  font-size: 48px;
+  color: #000 !important;
+}
+
+.orderFooterSelectionTabHeader {
+  cursor: pointer;
+}
+
+@media(max-width: 1200px) {
+  .orderStep {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+@media(max-width: 992px) {
+  .orderStepListDesktop {
+    display: none !important;
+  }
+
+  .orderStepListItem {
+    width: 90%;
+    margin: auto;
+  }
+
+  .orderStepListItem {
+    width: 75%!important;
+  }
+
+  .orderFooterSelectionTabHeader {
+    padding-left: 33px;
+  }
+  
+  .orderFooterSummaryTabText {
+    padding-left: 5px;
+  }
+
+  .orderFooterSummaryTabControls {
+    text-align: right;
+  }
+
+  .orderFooterSummaryTabText span {
+    display: block;
+    padding-top: 5px;
+  }
+
+  .orderStepList .slick-slider {
+    width: 80%;
+  }
+}
+
+@media(min-width: 993px) {
+  .orderStepListMobile {
+    display: none !important;
+  }
+}
+
+@media(max-width: 480px) {
+  .orderStepSliderBtn {
+    font-size: 7vw;
+  }
+  .orderStepListItem {
+    width: 88%!important;
+  }
+  .orderStepList .slick-slider {
+    width: 80%;
+  }
+  .orderStepHeaderTitle {
+    font-size: 25px;
+    line-height: 34px;
+    padding-right: 10px;
+  }
+  .orderStepHeader {
+    padding: 15px;
+  }
+  .orderFooterSummaryTabText {
+    width: 100%;
+    text-align: center;
+  }
+  .orderFooterSummaryTabControls {
+    width: 100%;
+    text-align: center;
+  }
+  .orderFooterSummaryTab {
+    flex-direction: column;
+    height: 110px;
+    justify-content: space-around;
+  }
+  .orderFooterSummaryTabControls button:last-child {
+    width: 100%;
+  }
+  .orderFooterSelectionTabHeader {
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .orderFooterSelectionTabHeader {
+    padding-left: 15px;
+  }
+  .orderStepListItemBottomText span {
+    display: block;
+    padding-top: 10px;
+  }
+}
+
+
+.orderStepListItem {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, .12);
+  width: 30%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  text-align: center;
+}
+
+.orderStepListItemImage {
+  width: 100%;
+}
+
+.orderStepListItemContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.orderStepListItemTitle {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.orderStepListItemSubTitle {
+  font-size: 13px;
+  color: rgb(255, 95, 95);
+  font-weight: 700;
+  margin-bottom: 25px;
+  padding: 0;
+  margin-top: 0;
+}
+
+.orderStepListItemPrice {
+  color: rgb(26, 25, 24);
+  font-weight: 800;
+  font-size: 45px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: Bebas Neue, sans-serif;
+}
+
+.orderStepListItemPrice span {
+  text-decoration: line-through;
+  opacity: .6;
+}
+
+.orderStepListItemAdditionalText {
+  opacity: .6;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.orderStepListItemButton {
+  text-transform: uppercase;
+  padding: 17px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background-color: rgb(144, 62, 129);
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 13px;
+  transition: .3s;
+}
+
+.orderStepListItemBottomText {
+  margin: 0;
+  font-size: 12px;
+}
+
+.orderStepListItemBottomText span {
+  color: #FBB03B;
+  margin-left: 9px;
+}
+
+.orderStepListItemShowPopUpBtn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer !important;
+  text-align: center;
+  color: #000;
+  opacity: .6;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.orderStepListItemSmallTitle {
+  opacity: 1;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.orderStepListItemCounter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.orderStepListItemCounter div {
+  cursor: default;
+}
+
+.orderStepListItemCounterBox {
+  width: 48px;
+  height: 45px;
+  background: transparent;
+  border: 2px solid #000;
+  border-left-width: 0;
+  outline: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.orderStepListItemCounterBox:first-child {
+  border-left-width: 2px;
+}
+
+@media(max-width: 464px) {
+  .orderStepSliderBtn {
+    width: auto !important;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+    z-index: 9;
+  }
+  .orderStepListItemTitle {
+    font-size: 5vw;
+  }
+  .orderStepListItemPrice {
+    font-size: 8vw;
+  }
+  .orderStepListItemAdditionalText {
+    font-size: 4vw;
+    line-height: 6vw;
+  }
+  .orderStepListItemButton {
+    width: 100%;
+    font-size: 4vw;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .orderStepList {
+    margin-top: 40px!important;
+  }
+}

@@ -1,0 +1,161 @@
+.orderFooter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  transition: .5s;
+  bottom: 0;
+  z-index: 9;
+}
+
+.orderFooterSelectionTab {
+  width: 100%;
+  min-height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.orderFooterSelectionTabHeader {
+  width: 100%;
+  background: #000;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.orderFooterSelectionTabHeader p {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.orderFooterSelectionTabHeader button {
+  color: #fff;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.orderFooterSelectionTabHeader button i {
+  transition: .2s;
+}
+
+.orderFooterSelectionTabContent {
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: .5s;
+}
+
+.orderFooterSelectionTabContentIcon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 10px;
+  transition: .3s;
+  position: relative;
+}
+
+.orderFooterSelectionTabContentIcon img {
+  width: 60%;
+}
+
+.orderFooterSelectionTabContentIcon button {
+  color: red;
+  font-weight: 800;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -4px;
+  top: -7px;
+  padding: 0;
+  margin: 0;
+}
+
+.orderFooterSummaryTab {
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.orderFooterSummaryTabText {
+  font-weight: 800;
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
+}
+
+.orderFooterSummaryTabText span {
+  font-size: 14px;
+  color: red;
+  text-transform: lowercase;
+}
+
+.orderFooterSummaryTabControls button {
+  width: 170px;
+  height: 37px;
+  outline: none;
+  border: 2px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 17px;
+  background: transparent;
+  transition: .2s;
+}
+
+.orderFooterSummaryTabControls button:last-child {
+  background: #903E81;
+  border-color: #903E81;
+  color: #fff;
+}
+
+.orderFooterSummaryTabControls button:hover {
+  opacity: .7;
+}
+
+@media(max-width: 920px) {
+  .orderFooterSummaryTabControls {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .orderFooterSummaryTabControls button:first-child {
+    width: 30%;
+  }
+  .orderFooterSummaryTabControls button:last-child {
+    width: 70%;
+  }
+}
+
