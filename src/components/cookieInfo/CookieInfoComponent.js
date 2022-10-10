@@ -4,6 +4,10 @@ import learn from '../../assets/img/learn.png'
 import cakeGif from '../../assets/img/main-cake.gif'
 
 const CookieInfoComponent = () => {
+    const learnMoreButtonFunc = () => {
+        window.location.href = window.location.href.replace('#people', '') + '#people';
+    };
+
     return(
         <section className="cookies-info-section">
             <div className="container">
@@ -51,8 +55,8 @@ const CookieInfoComponent = () => {
                     </div>
                 </div>
                 <div className="learn-block">
-                    <p className="learn-text">LEARN MORE</p>
-                    <img src={learn} className="learn-icon" alt="" />
+                    <p className="learn-text" onClick={ learnMoreButtonFunc }>LEARN MORE</p>
+                    <img src={learn} className="learn-icon" alt="" onClick={ learnMoreButtonFunc }/>
                 </div>
             </div>
         </section>

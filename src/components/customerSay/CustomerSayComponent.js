@@ -19,7 +19,7 @@ const CustomerSayComponent = () => {
                     <div className="title-review">Best Protein cookie!</div>
                     <div className="who-review">Jackie on Sep 21,2022</div>
                     <div className="text-review">delicious and filling!</div>
-                    <div className="riveiw-report">Report as Inappropriate</div>
+                    <p className="riveiw-report">Report as Inappropriate</p>
                 </div>
                 <div className="review-block">
                     <div className="review-stars-block">

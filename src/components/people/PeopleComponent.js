@@ -3,7 +3,7 @@ import peopleData from './data';
 
 const PeopleComponent = () => {
     return(
-        <section className="section-people">
+        <section className="section-people" id="people">
             <div className="container">
                 <h2 className="title white">People all over the US are ditching chalky protein bars for Naked Cookies!</h2>
                 <div className="face-flex">

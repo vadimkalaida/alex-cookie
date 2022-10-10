@@ -130,6 +130,16 @@ a {
     background: rgb(144, 62, 129);
     border-radius: 6px;
     padding: 20px 54px;
+    transition: .2s;
+}
+
+.try-button:hover {
+    opacity: .8;
+}
+
+
+.try-button:active {
+    transform: scale(.99);
 }
 
 .button-block {
@@ -294,12 +304,14 @@ a {
 
 .learn-icon {
     width: 76px;
+    cursor: pointer;
 }
 
 .learn-text {
     color: rgb(199, 199, 199);
     line-height: 14px;
     font-size: 12px;
+    cursor: pointer;
 }
 
 .learn-block {
@@ -553,6 +565,15 @@ a {
     background: #fff;
     padding: 22px 100px;
     border-radius: 6px;
+    transition: .2s;
+}
+
+.button-get:hover {
+    opacity: .9;
+}
+
+.button-get:active {
+    transform: scale(.99);
 }
 
 .rated-get {
@@ -643,6 +664,15 @@ a {
     outline: none;
     border: none;
     cursor: pointer;
+    transition: .2s;
+}
+
+.ingretients:hover {
+    color: rgba(0, 0, 0, .9);
+}
+
+.ingretients:active {
+    transform: scale(.99);
 }
 
 /*-- FAQ SECTION STYLES --*/
@@ -699,6 +729,15 @@ a {
     background: rgb(144, 62, 129);
     padding: 25px 120px;
     margin-top: 20px;
+    transition: .2s;
+}
+
+.satisfy-button:hover {
+    opacity: .8;
+}
+
+.satisfy-button:active {
+    transform: scale(.99);
 }
 
 /*-- FOOTER STYLES --*/

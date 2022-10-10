@@ -246,7 +246,15 @@
   border-radius: 6px;
   cursor: pointer;
   margin-bottom: 13px;
-  transition: .3s;
+  transition: .2s;
+}
+
+.orderStepListItemButton:hover {
+  opacity: .8;
+}
+
+.orderStepListItemButton:active {
+  transform: scale(.99);
 }
 
 .orderStepListItemBottomText {
@@ -272,6 +280,15 @@
   font-size: 14px;
   font-weight: 700;
   text-decoration: underline;
+  transition: .2s;
+}
+
+.orderStepListItemShowPopUpBtn:hover {
+  opacity: .9;
+}
+
+.orderStepListItemShowPopUpBtn:active {
+  transform: scale(.99);
 }
 
 .orderStepListItemSmallTitle {
