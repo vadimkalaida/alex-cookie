@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/alex-cookie/static/css/main.99ca3872.css",
-    "main.js": "/alex-cookie/static/js/main.2d4ce60a.js",
+    "main.css": "/alex-cookie/static/css/main.732a821e.css",
+    "main.js": "/alex-cookie/static/js/main.0b83a77e.js",
     "static/js/787.f90002a8.chunk.js": "/alex-cookie/static/js/787.f90002a8.chunk.js",
     "static/media/NN_Choco Chip EXP_V2.mp4": "/alex-cookie/static/media/NN_Choco Chip EXP_V2.f41e100f022351c7ca17.mp4",
     "static/media/NN_OatmealRaisinCookie_V3.mp4": "/alex-cookie/static/media/NN_OatmealRaisinCookie_V3.410e570a230c1df24f86.mp4",
@@ -47,12 +47,12 @@
     "static/media/star.svg": "/alex-cookie/static/media/star.8050a4381d4b95fd20c6c71cbc282e11.svg",
     "static/media/star-review.svg": "/alex-cookie/static/media/star-review.37c665ea8294e27d25136c69a65e9c08.svg",
     "static/media/star-white.svg": "/alex-cookie/static/media/star-white.0b4b539fdfa7a11404a4931168b905b1.svg",
-    "main.99ca3872.css.map": "/alex-cookie/static/css/main.99ca3872.css.map",
-    "main.2d4ce60a.js.map": "/alex-cookie/static/js/main.2d4ce60a.js.map",
+    "main.732a821e.css.map": "/alex-cookie/static/css/main.732a821e.css.map",
+    "main.0b83a77e.js.map": "/alex-cookie/static/js/main.0b83a77e.js.map",
     "787.f90002a8.chunk.js.map": "/alex-cookie/static/js/787.f90002a8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.99ca3872.css",
-    "static/js/main.2d4ce60a.js"
+    "static/css/main.732a821e.css",
+    "static/js/main.0b83a77e.js"
   ]
 }
