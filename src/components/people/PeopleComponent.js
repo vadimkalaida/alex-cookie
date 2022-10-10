@@ -1,39 +1,25 @@
 import React from 'react';
-import face1 from '../../assets/img/face-1.png'
-import face2 from '../../assets/img/face-2.png'
-import face3 from '../../assets/img/face-3.png'
+import peopleData from './data';
 
 const PeopleComponent = () => {
     return(
-        <section class="section-people">
-            <div class="container">
-                <h2 class="title white">People all over the US are ditching chalky protein bars for Naked Cookies!</h2>
-                <div class="face-flex">
-                    <div class="face-block">
-                        <div>
-                            <img src={face1} class="face-img" alt="" />
-                        </div>
-                        <p class="text-face">"I can't believe these only have 1 gram of sugar!"</p>
-                        <p class="name-face">KELSEY D.</p>
-                    </div>
-                    <div class="face-block">
-                        <div>
-                            <img src={face2} class="face-img" alt="" />
-                        </div>
-                        <p class="text-face">"Dude, these taste sooo good. Best protein snack ever."</p>
-                        <p class="name-face">TYLER N.</p>
-                    </div>
-                    <div class="face-block">
-                        <div>
-                            <img src={face3} class="face-img" alt="" />
-                        </div>
-                        <p class="text-face">"They are soft and chewy just like a real cookie!"</p>
-                        <p class="name-face">MARY M.</p>
-                    </div>
+        <section className="section-people">
+            <div className="container">
+                <h2 className="title white">People all over the US are ditching chalky protein bars for Naked Cookies!</h2>
+                <div className="face-flex">
+                    { peopleData.map((item, index) =>
+                      <div className="face-block" key={ index }>
+                          <div>
+                              <img src={ item.photo } className="face-img" alt="" />
+                          </div>
+                          <p className="text-face">"{ item.quote }"</p>
+                          <p className="name-face">{ item.name }</p>
+                      </div>
+                    ) }
                 </div>
             </div>
         </section>
     )
-}
+};
 
 export default PeopleComponent;

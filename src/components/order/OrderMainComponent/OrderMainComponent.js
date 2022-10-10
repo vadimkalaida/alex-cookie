@@ -6,7 +6,7 @@ import OrderFooterComponent from "../OrderFooterComponent/OrderFooterComponent";
 import OrderStepComponent from "../OrderStepComponent/OrderStepComponent";
 import OrderIngredientsPopUpComponent from "../OrderIngredientsPopUpComponent/OrderIngredientsPopUpComponent";
 
-const OrderMainComponent = () => {
+const OrderMainComponent = (props) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -125,7 +125,8 @@ const OrderMainComponent = () => {
 
       <OrderFooterComponent currentStep={ currentStep } selectedFlavors={ selectedFlavors }
       changeCurrentStep={ changeCurrentStep } removeFlavor={ removeFlavor }
-      isLimit={ currentOrder && currentOrder.length > 0 ? (selectedFlavors.length >= currentOrder[0].boxes.length) : null } />
+      isLimit={ currentOrder && currentOrder.length > 0 ? (selectedFlavors.length >= currentOrder[0].boxes.length) : null }
+      mainRef={ props.mainRef }/>
 
     </div>
   );

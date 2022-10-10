@@ -6,7 +6,7 @@
   position: fixed;
   transition: .5s;
   bottom: 0;
-  z-index: 9;
+  z-index: 99;
 }
 
 .orderFooterSelectionTab {

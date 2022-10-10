@@ -639,6 +639,10 @@ a {
     color: rgb(116, 116, 116);
     line-height: 14px;
     font-size: 12px;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 /*-- FAQ SECTION STYLES --*/

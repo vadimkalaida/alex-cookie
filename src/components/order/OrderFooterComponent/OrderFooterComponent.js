@@ -17,14 +17,28 @@ const OrderFooterComponent = (props) => {
   };
   const [ isSelectionExpanded, setIsSelectionExpanded ] = useState(false);
   const [ selectedFlavorsNum, setSelectedFlavorsNum ] = useState(props.selectedFlavors ? props.selectedFlavors.length : 0);
+  const [ isVisible, setIsVisible ] = useState(false);
 
   useEffect(() => {
     if(props.selectedFlavors) setSelectedFlavorsNum(props.selectedFlavors.length);
   }, [props.selectedFlavors]);
 
+  useEffect(() => {
+    setIsVisible(currentOrder && currentOrder.length > 0);
+  }, [currentOrder]);
+
+  useEffect(() => {
+    if(props.currentStep > 2) setIsVisible(false);
+  }, [props.currentStep]);
+
+  useEffect(() => {
+    if(props.mainRef) {
+      props.mainRef.current.style.paddingBottom = isVisible ? '100px' : 0;
+    }
+  }, [isVisible]);
 
   return(
-    <div className="orderFooter" style={{ bottom: currentOrder && currentOrder.length > 0 ? '0' : '-100px' }}>
+    <div className="orderFooter" style={{ bottom: isVisible ? '0' : '-100px' }}>
       <div className="orderFooterSelectionTab">
         { currentOrder && currentOrder.length > 0 ?
           <>

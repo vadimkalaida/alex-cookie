@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import OrderMainComponent from "./components/order/OrderMainComponent/OrderMainComponent";
-import {useSelector} from "react-redux";
 import HeaderComponent from "./components/header/HeaderComponent"
 import CookieFirstComponent from "./components/main/CookieFirstComponent"
 import CompanyUseComponent from "./components/company/CompanyUseComponent"
@@ -14,17 +13,16 @@ import FaqComponent from "./components/faq/FaqComponent"
 import FooterComponent from "./components/footer/FooterComponent"
 import GrabComponent from "./components/grab/GrabComponent"
 
-
 import './css/style.css'
 import './css/reset.css'
 import './css/normalize.css'
 
 
 function App() {
-  const currentOrder = useSelector(state => state.order);
+  const mainRef = useRef();
 
   return (
-    <main style={ currentOrder && currentOrder.length > 0 ? { paddingBottom: '100px' } : {} }>
+    <main ref={ mainRef }>
       <HeaderComponent />
       <CookieFirstComponent />
       <CompanyUseComponent />
@@ -32,7 +30,7 @@ function App() {
       <PeopleComponent />
       <InfoAboutComponent />
       <GrabComponent />
-      <OrderMainComponent />
+      <OrderMainComponent mainRef={ mainRef } />
       <CustomerSayComponent />
       <GetNowComponent />
       <VideoComponent />

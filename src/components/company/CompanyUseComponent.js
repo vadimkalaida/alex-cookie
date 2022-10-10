@@ -10,23 +10,23 @@ import cm8 from '../../assets/img/cm-8.png'
 
 const CompanyUseComponent = () => {
     return(
-        <section class="as-see-section">
-            <div class="as-see-bg"></div>
-            <div class="container">
-                <p class="as-see-text">AS SEEN ON:</p>
-                <div class="flex-cm">
-                    <img src={cm1} class="cm-1" alt="" />
-                    <img src={cm2} class="cm-2" alt="" />
-                    <img src={cm3} class="cm-3" alt="" />
-                    <img src={cm4} class="cm-4" alt="" />
-                    <img src={cm5} class="cm-5" alt="" />
-                    <img src={cm6} class="cm-6" alt="" />
-                    <img src={cm7} class="cm-7" alt="" />
-                    <img src={cm8} class="cm-8" alt="" />
+        <section className="as-see-section">
+            <div className="as-see-bg"></div>
+            <div className="container">
+                <p className="as-see-text">AS SEEN ON:</p>
+                <div className="flex-cm">
+                    <img src={cm1} className="cm-1" alt="" />
+                    <img src={cm2} className="cm-2" alt="" />
+                    <img src={cm3} className="cm-3" alt="" />
+                    <img src={cm4} className="cm-4" alt="" />
+                    <img src={cm5} className="cm-5" alt="" />
+                    <img src={cm6} className="cm-6" alt="" />
+                    <img src={cm7} className="cm-7" alt="" />
+                    <img src={cm8} className="cm-8" alt="" />
                 </div>
             </div>
         </section>
     )
-}
+};
 
 export default CompanyUseComponent;

@@ -8,46 +8,46 @@ import sslChekout from '../../assets/img/ssl-checkout.png'
 
 const CookieFirstComponent = () => {
     return(
-        <section class="main-section">
-            <div class="container flex-main">
-                <div class="left-main">
+        <section className="main-section">
+            <div className="container flex-main">
+                <div className="left-main">
                     <a href="#">
-                        <img src={logo} class="logotype" alt=""></img>
+                        <img src={logo} className="logotype" alt="Logo" />
                     </a>
-                    <p class="main-description">With as little as 1 gram of sugar, these NEW Naked Protein Cookies are</p>
-                    <h1 class="main-title">The perfect guilt-free snack to satisfy your sweet tooth cravings</h1>
-                    <div class="mobile">
-                        <img src={mainImg} class="main-img" alt=""></img>
+                    <p className="main-description">With as little as 1 gram of sugar, these NEW Naked Protein Cookies are</p>
+                    <h1 className="main-title">The perfect guilt-free snack to satisfy your sweet tooth cravings</h1>
+                    <div className="mobile">
+                        <img src={mainImg} className="main-img" alt="Main" />
                     </div>
-                    <div class="flex-starts">
-                        <p class="box-12-cookies">BOX OF 12 COOKIES | RATED 5 STARS</p>
-                        <div class="box-starts">
-                            <span><img src={mainStar} alt="" class="star" /></span>
-                            <span><img src={mainStar} alt="" class="star" /></span>
-                            <span><img src={mainStar} alt="" class="star" /></span>
-                            <span><img src={mainStar} alt="" class="star" /></span>
-                            <span><img src={mainStar} alt="" class="star" /></span>
+                    <div className="flex-starts">
+                        <p className="box-12-cookies">BOX OF 12 COOKIES | RATED 5 STARS</p>
+                        <div className="box-starts">
+                            <span><img src={mainStar} alt="star" className="star" /></span>
+                            <span><img src={mainStar} alt="star" className="star" /></span>
+                            <span><img src={mainStar} alt="star" className="star" /></span>
+                            <span><img src={mainStar} alt="star" className="star" /></span>
+                            <span><img src={mainStar} alt="start" className="star" /></span>
                         </div>
                     </div>
-                    <div class="button-block">
-                        <a href="#orderMain" class="try-button">TRY NAKED COOKIES NOW </a>
+                    <div className="button-block">
+                        <a href="#orderMain" className="try-button">TRY NAKED COOKIES NOW </a>
                     </div>
 
-                    <div class="flex-info-img">
+                    <div className="flex-info-img">
                         <div>
-                            <img src={icon3} class="gmo-img" alt="" />
+                            <img src={icon3} className="gmo-img" alt="" />
                         </div>
                         <div>
-                            <img src={sslChekout} class="ssl-img" alt="" />
+                            <img src={sslChekout} className="ssl-img" alt="" />
                         </div>
                     </div>
                 </div>
-                <div class="right-main desktop">
-                    <img src={mainImg} class="main-img" alt="" />
+                <div className="right-main desktop">
+                    <img src={mainImg} className="main-img" alt="" />
                 </div>
             </div>
         </section>
     )
-}
+};
 
 export default CookieFirstComponent;
