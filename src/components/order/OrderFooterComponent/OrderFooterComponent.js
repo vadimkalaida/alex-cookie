@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './OrderFooterComponent.css';
 import { useSelector } from "react-redux";
-import cookieBox from '../../../assets/icons/cookie_box.png';
-import cookie from '../../../assets/icons/cookie.png';
-import chocolateCookie from '../../../assets/icons/chocolate_cookie.jpg';
-import oatmealCookie from '../../../assets/icons/oatmeal_cookie.jpg';
-import sugarCookie from '../../../assets/icons/sugar_cookie.jpg';
+import cookieBox from '../../../assets/icons/cookie_box.webp';
+import cookie from '../../../assets/icons/cookie.webp';
+import chocolateCookie from '../../../assets/icons/chocolate_cookie.webp';
+import oatmealCookie from '../../../assets/icons/oatmeal_cookie.webp';
+import sugarCookie from '../../../assets/icons/sugar_cookie.webp';
 
 const OrderFooterComponent = (props) => {
   const currentOrder = useSelector(state => state.order);

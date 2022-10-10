@@ -5,7 +5,7 @@ import cakeGif from '../../assets/img/main-cake.gif'
 
 const CookieInfoComponent = () => {
     const learnMoreButtonFunc = () => {
-        window.location.href = window.location.href.replace('#people', '') + '#people';
+        window.location.href = window.location.href.split('#')[0] + '#people';
     };
 
     return(
