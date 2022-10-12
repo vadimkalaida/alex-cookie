@@ -6,6 +6,7 @@ import cookie from '../../../assets/icons/cookie.webp';
 import chocolateCookie from '../../../assets/icons/chocolate_cookie.webp';
 import oatmealCookie from '../../../assets/icons/oatmeal_cookie.webp';
 import sugarCookie from '../../../assets/icons/sugar_cookie.webp';
+import getCheckoutLink from "../../../services/checkout-link.service";
 
 const OrderFooterComponent = (props) => {
   const currentOrder = useSelector(state => state.order);
@@ -28,8 +29,14 @@ const OrderFooterComponent = (props) => {
   }, [currentOrder]);
 
   useEffect(() => {
-    if(props.currentStep > 2) setIsVisible(false);
-  }, [props.currentStep]);
+    if(props.currentStep > 2) {
+      setIsVisible(false);
+      if(currentOrder && currentOrder.length > 0 && currentOrder[0].boxes && currentOrder[0].boxes.length > 0) {
+        window.location.href = getCheckoutLink(currentOrder[0].boxes);
+      }
+    }
+
+  }, [props.currentStep, currentOrder]);
 
   useEffect(() => {
     if(props.mainRef) {
