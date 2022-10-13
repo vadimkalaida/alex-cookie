@@ -28,8 +28,8 @@ const cookieBoxesData = [
   {
     title: '3 Boxes Of Naked Cookies',
     currPrice: 82.99,
-    prevPrice: 107.97,
-    additionalText: `Save $${(107.97 - 82.99).toFixed(2)}!`,
+    prevPrice: 89.97,
+    additionalText: `Save $${(89.97 - 82.99).toFixed(2)}!`,
     description: 'Most Popular',
     bottomText: 'FREE Shipping',
     isWithBonus: true,
@@ -50,8 +50,8 @@ const cookieBoxesData = [
   {
     title: '6 Boxes Of Naked Cookies',
     currPrice: 159.99,
-    prevPrice: 215.94,
-    additionalText: `Save $${(215.94 - 159.99).toFixed(2)}!`,
+    prevPrice: 179.94,
+    additionalText: `Save $${(179.94 - 159.99).toFixed(2)}!`,
     description: 'Best Value',
     bottomText: 'FREE Shipping + FREE Box OF Cookies',
     isWithBonus: true,

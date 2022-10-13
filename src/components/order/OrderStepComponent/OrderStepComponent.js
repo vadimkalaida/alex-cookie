@@ -7,9 +7,18 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import OrderStepFlavorSubComponent from "./subcomponents/OrderStepFlavorSubComponent/OrderStepFlavorSubComponent";
 import OrderStepBoxSubComponent from "./subcomponents/OrderStepBoxSubComponent/OrderStepBoxSubComponent";
+import { moveArrayItem } from "../../../services/array.service";
 
 const OrderStepComponent = (props) => {
   const [ isExpanded, setIsExpanded ] = useState(props.currentStep === props.stepNum);
+
+  const [ cookieMobileBoxesData, setCookieMobileBoxesData ] = useState(cookieBoxesData);
+
+  useEffect(() => {
+    if(cookieBoxesData && cookieBoxesData.length > 0) {
+      setCookieMobileBoxesData(moveArrayItem(1, 0, cookieBoxesData));
+    }
+  }, []);
 
   let carouselSettings = {
     dots: false,
@@ -103,7 +112,7 @@ const OrderStepComponent = (props) => {
             </button>
             <Slider ref={ sliderRef } { ...carouselSettings }>
               {
-                cookieBoxesData.map((item, index) =>
+                cookieMobileBoxesData.map((item, index) =>
                   <OrderStepBoxSubComponent key={ index } item={ item } currentOrder={ currentOrder } selectBoxes={ props.selectBoxes } />
                 )
               }
