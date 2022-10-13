@@ -93,7 +93,7 @@ const OrderFooterComponent = (props) => {
             <p className="orderFooterSummaryTabText">
               Total: ${ currentOrder[0].currPrice }
               { currentOrder[0].isWithBonus ?
-                <span>{ currentOrder[0].bottomText } unlocked</span> : null
+                <span>{ currentOrder[0].bottomText } unlocked!</span> : null
               }
             </p>
             <div className="orderFooterSummaryTabControls">
