@@ -33,6 +33,10 @@ const getCheckoutLink = (boxesArr) => {
 
   linkToReturn += "?";
 
+  if(boxesArr.length === 3 || boxesArr.length === 6) {
+    linkToReturn += `&discount=${ boxesArr.length === 3 ? '3PLUSCOOKIESBULK' : '6PLUSCOOKIESBULK' }`;
+  }
+
   return linkToReturn;
 };
 
