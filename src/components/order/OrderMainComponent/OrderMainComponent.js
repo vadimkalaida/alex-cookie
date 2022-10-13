@@ -26,6 +26,7 @@ const OrderMainComponent = (props) => {
 
   const selectBoxes = (item) => {
     dispatch(orderActions.setNewOrder([item]));
+    setCurrentStep(2);
     setSelectedFlavorsIndexes({
       chocolate: [],
       sugar: [],
@@ -116,13 +117,16 @@ const OrderMainComponent = (props) => {
       <OrderIngredientsPopUpComponent changeStatusOfIngredientsPopUp={ changeStatusOfIngredientsPopUp }
       currentFlavorIngredient={ currentFlavorIngredient } isIngredientsPopUpVisible={ isIngredientsPopUpVisible }/>
 
-      <OrderStepComponent title="Select Your Package" currentStep={ currentStep } stepNum={1} selectBoxes={ selectBoxes }/>
+      { currentStep === 1 ?
+        <OrderStepComponent title="Select Your Package" currentStep={ currentStep } stepNum={1} selectBoxes={ selectBoxes }/> : null
+      }
 
-      <OrderStepComponent title="Select Your Flavors" currentStep={ currentStep } stepNum={2}
-      selectedFlavorsIndexes={ selectedFlavorsIndexes } changeStatusOfIngredientsPopUp={ changeStatusOfIngredientsPopUp }
-      isLimit={ currentOrder && currentOrder.length > 0 ? (selectedFlavors.length >= currentOrder[0].boxes.length) : null }
-      selectedFlavors={ selectedFlavors } addFlavorToOrder={ addFlavorToOrder }/>
-
+      { currentStep === 2 ?
+        <OrderStepComponent title="Select Your Flavors" currentStep={ currentStep } stepNum={2}
+        selectedFlavorsIndexes={ selectedFlavorsIndexes } changeStatusOfIngredientsPopUp={ changeStatusOfIngredientsPopUp }
+        isLimit={ currentOrder && currentOrder.length > 0 ? (selectedFlavors.length >= currentOrder[0].boxes.length) : null }
+        selectedFlavors={ selectedFlavors } addFlavorToOrder={ addFlavorToOrder }/> : null
+      }
       <OrderFooterComponent currentStep={ currentStep } selectedFlavors={ selectedFlavors }
       changeCurrentStep={ changeCurrentStep } removeFlavor={ removeFlavor }
       isLimit={ currentOrder && currentOrder.length > 0 ? (selectedFlavors.length >= currentOrder[0].boxes.length) : null }

@@ -26,6 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: .2s;
 }
 
 .orderFooterSelectionTabHeader p {
@@ -118,6 +119,13 @@
   font-size: 14px;
   color: red;
   text-transform: lowercase;
+  margin-left: 5px;
+}
+
+@media(max-width: 990px) {
+  .orderFooterSummaryTabText span {
+    margin-left: 0;
+  }
 }
 
 .orderFooterSummaryTabControls button {

@@ -49,7 +49,8 @@ const OrderFooterComponent = (props) => {
       <div className="orderFooterSelectionTab">
         { currentOrder && currentOrder.length > 0 ?
           <>
-            <div className="orderFooterSelectionTabHeader" onClick={() => setIsSelectionExpanded(!isSelectionExpanded)}>
+            <div className="orderFooterSelectionTabHeader" onClick={() => setIsSelectionExpanded(!isSelectionExpanded)}
+                 style={ props.currentStep === 2 ? { background: props.isLimit ? 'green' : '#E70000' } : {} }>
               <p>
                 { props.currentStep === 1 ?
                   `${ currentOrder[0].boxes.length + (currentOrder[0].boxes.length === 1 ? ' Box' : ' Boxes') } Of Naked Cookies Selected`

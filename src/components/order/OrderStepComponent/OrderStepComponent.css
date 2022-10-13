@@ -46,6 +46,8 @@
   margin-top: 105px;
   margin-bottom: 20px;
   overflow-x: hidden;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .orderStepList .slick-slider {
@@ -116,12 +118,18 @@
   }
 }
 
+@media(max-width: 580px) {
+  .orderStepListItem {
+    width: 95% !important;
+  }
+}
+
 @media(max-width: 480px) {
   .orderStepSliderBtn {
     font-size: 7vw;
   }
   .orderStepListItem {
-    width: 88%!important;
+    width: 95% !important;
   }
   .orderStepList .slick-slider {
     width: 80%;
@@ -185,6 +193,11 @@
 
 .slick-list {
   box-sizing: initial;
+}
+
+.slick-slide {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .orderStepListItemImage {

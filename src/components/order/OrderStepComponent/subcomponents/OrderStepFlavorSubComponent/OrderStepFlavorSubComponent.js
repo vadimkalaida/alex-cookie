@@ -32,7 +32,7 @@ const OrderStepFlavorSubComponent = (props) => {
                 style={ props.isLimit || props.chosenFlavors[props.item.name] + props.selectedFlavors.length > props.currentOrder[0].boxes.length ||
                 props.chosenFlavors[props.item.name] === 0 ? { pointerEvents: 'none', background: '#EAEAEA', color: '#9D9D9D' } : {} }
                 onClick={props.addFlavorToOrder ? () => props.addFlavorToOrder(props.item.name, props.chosenFlavors[props.item.name]) : () => {}}>
-          + add to order
+          + add to pack
         </button>
 
         <button className="orderStepListItemShowPopUpBtn"
