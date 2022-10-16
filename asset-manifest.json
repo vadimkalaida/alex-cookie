@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/alex-cookie/static/css/main.462f0e93.css",
+    "main.css": "/alex-cookie/static/css/main.a378033c.css",
     "main.js": "/alex-cookie/static/js/main.8937f6a6.js",
     "static/js/787.f90002a8.chunk.js": "/alex-cookie/static/js/787.f90002a8.chunk.js",
     "static/media/NN_Choco Chip EXP_V2.mp4": "/alex-cookie/static/media/NN_Choco Chip EXP_V2.f41e100f022351c7ca17.mp4",
@@ -45,12 +45,12 @@
     "static/media/star-review.svg": "/alex-cookie/static/media/star-review.37c665ea8294e27d25136c69a65e9c08.svg",
     "static/media/star-white.svg": "/alex-cookie/static/media/star-white.0b4b539fdfa7a11404a4931168b905b1.svg",
     "static/media/cookie_box.webp": "/alex-cookie/static/media/cookie_box.2e3163b237818c985cc9.webp",
-    "main.462f0e93.css.map": "/alex-cookie/static/css/main.462f0e93.css.map",
+    "main.a378033c.css.map": "/alex-cookie/static/css/main.a378033c.css.map",
     "main.8937f6a6.js.map": "/alex-cookie/static/js/main.8937f6a6.js.map",
     "787.f90002a8.chunk.js.map": "/alex-cookie/static/js/787.f90002a8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.462f0e93.css",
+    "static/css/main.a378033c.css",
     "static/js/main.8937f6a6.js"
   ]
 }
