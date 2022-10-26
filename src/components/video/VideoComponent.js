@@ -23,6 +23,8 @@ const VideoComponent = () => {
       currentFlavorIngredient={ currentFlavorIngredient } isIngredientsPopUpVisible={ isIngredientsPopUpVisible }/>
 
       <div className="container">
+        <div className="title-vid">The Naked Difference</div>
+        <div className="des-vid">Clean Ingredients, Great Taste</div>
         <div className="flex-video">
           { videoFlavorsData.map((item, index) =>
             <div key={ index } className="video-block">
@@ -33,6 +35,9 @@ const VideoComponent = () => {
               <button className="ingretients" onClick={() => changeStatusOfIngredientsPopUp(item)}>SHOW INGREDIENTS</button>
             </div>
           ) }
+        </div>
+        <div className="button-block mob-but">
+            <a href="#orderMain" className="try-button">→ GET CLEAN, TASTY COOKIES NOW!</a>
         </div>
         <div className="label-block">
           <img src={labelInfo} className="label-info" alt="" />

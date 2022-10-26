@@ -28,7 +28,7 @@ const CookieInfoComponent = () => {
                                 <img src={checkIcon} className="check-icon" alt="" />
                             </div>
                             <div className="title-check">LOW CALORIES</div>
-                            <p className="text-check">Each cookie contains just 190 calories, so you can finally feed your cravings without feeding your waistline.</p>
+                            <p className="text-check">Each cookie contains between 190 and 210 calories, so you can finally feed your cravings without feeding your waistline.</p>
                         </div>
                     </div>
 

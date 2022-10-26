@@ -13,7 +13,7 @@ const CompanyUseComponent = () => {
         <section className="as-see-section">
             <div className="as-see-bg"></div>
             <div className="container">
-                <p className="as-see-text">AS SEEN ON:</p>
+                <p className="as-see-text">As Seen On:</p>
                 <div className="flex-cm">
                     <img src={cm1} className="cm-1" alt="" />
                     <img src={cm2} className="cm-2" alt="" />

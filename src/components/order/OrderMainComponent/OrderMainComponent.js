@@ -5,6 +5,7 @@ import { orderActions } from "../../../store/actions";
 import OrderFooterComponent from "../OrderFooterComponent/OrderFooterComponent";
 import OrderStepComponent from "../OrderStepComponent/OrderStepComponent";
 import OrderIngredientsPopUpComponent from "../OrderIngredientsPopUpComponent/OrderIngredientsPopUpComponent";
+import OrderWaitPopUpComponent from "../OrderWaitPopUpComponent/OrderWaitPopUpComponent";
 
 const OrderMainComponent = (props) => {
   const dispatch = useDispatch();
@@ -23,6 +24,7 @@ const OrderMainComponent = (props) => {
   const [ selectedFlavors, setSelectedFlavors ] = useState([]);
   const [ currentFlavorIngredient, setCurrentFlavorIngredient ] = useState(null);
   const [ isIngredientsPopUpVisible, setIsIngredientsPopUpVisible ] = useState(false);
+  const [ isWaitPopUpVisible, setIsWaitPopUpVisible ] = useState(false);
 
   const selectBoxes = (item) => {
     dispatch(orderActions.setNewOrder([item]));
@@ -116,9 +118,12 @@ const OrderMainComponent = (props) => {
     <div className="orderMain" id="orderMain">
       <OrderIngredientsPopUpComponent changeStatusOfIngredientsPopUp={ changeStatusOfIngredientsPopUp }
       currentFlavorIngredient={ currentFlavorIngredient } isIngredientsPopUpVisible={ isIngredientsPopUpVisible }/>
+      { isWaitPopUpVisible ?
+        <OrderWaitPopUpComponent /> : null
+      }
 
       { currentStep === 1 ?
-        <OrderStepComponent title="Select Your Package" currentStep={ currentStep } stepNum={1} selectBoxes={ selectBoxes }/> : null
+        <OrderStepComponent title="Choose Quantity" currentStep={ currentStep } stepNum={1} selectBoxes={ selectBoxes }/> : null
       }
 
       { currentStep === 2 ?
@@ -130,7 +135,7 @@ const OrderMainComponent = (props) => {
       <OrderFooterComponent currentStep={ currentStep } selectedFlavors={ selectedFlavors }
       changeCurrentStep={ changeCurrentStep } removeFlavor={ removeFlavor }
       isLimit={ currentOrder && currentOrder.length > 0 ? (selectedFlavors.length >= currentOrder[0].boxes.length) : null }
-      mainRef={ props.mainRef }/>
+      mainRef={ props.mainRef } showWaitPopUp={() => setIsWaitPopUpVisible(true)}/>
 
     </div>
   );

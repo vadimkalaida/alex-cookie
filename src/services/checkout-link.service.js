@@ -14,8 +14,7 @@ const getCheckoutLink = (boxesArr) => {
     },
   };
 
-  let locationSplit = window.location.href.split('/');
-  let linkToReturn = locationSplit[0] + '//' + locationSplit[2] + '/cart/';
+  let linkToReturn = 'https://nakednutrition.com/cart/';
 
   for(let i = 0; i < boxesArr.length; i++) {
     if(productsObj[boxesArr[i].name]) {

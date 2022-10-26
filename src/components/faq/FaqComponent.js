@@ -13,7 +13,7 @@ const FaqComponent = () => {
                 <div>
                     <div className="faq-line"></div>
                     <h3 className="title-faq">Are Naked Cookies ok for people with nut allergies?</h3>
-                    <p className="text-faq">No. Chocolate Chip Naked Cookies contain almond butter and almond flour, both derived directly from almonds. Therefore, we do not suggest using the product if you suffer from a nut allergy.</p>
+                    <p className="text-faq">No. All Naked Cookies contain almond butter and almond flour, both derived directly from almonds. Therefore, we do not suggest using the product if you suffer from a nut allergy.</p>
                 </div>
                 <div>
                     <div className="faq-line"></div>

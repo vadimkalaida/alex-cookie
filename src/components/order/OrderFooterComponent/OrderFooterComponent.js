@@ -32,6 +32,7 @@ const OrderFooterComponent = (props) => {
     if(props.currentStep > 2) {
       setIsVisible(false);
       if(currentOrder && currentOrder.length > 0 && currentOrder[0].boxes && currentOrder[0].boxes.length > 0) {
+        props.showWaitPopUp();
         window.location.href = getCheckoutLink(currentOrder[0].boxes);
       }
     }
@@ -45,7 +46,7 @@ const OrderFooterComponent = (props) => {
   }, [isVisible]);
 
   return(
-    <div className="orderFooter" style={{ bottom: isVisible ? '0' : '-100px' }}>
+    <div className="orderFooter" style={{ bottom: isVisible ? '0' : '-120px' }}>
       <div className="orderFooterSelectionTab">
         { currentOrder && currentOrder.length > 0 ?
           <>
@@ -108,7 +109,7 @@ const OrderFooterComponent = (props) => {
               { pointerEvents: 'none', background: '#EAEAEA', color: '#9D9D9D', borderColor: '#9D9D9D'} : {} }
               onClick={ props.currentStep < 2 ? () => props.changeCurrentStep(true)
               : props.isLimit ? () => props.changeCurrentStep(true) : () => {} }>
-                { props.currentStep > 1 ? 'Finish' : 'Next' }
+                { props.currentStep > 1 ? 'Checkout' : 'Next' }
               </button>
             </div>
           </> : null

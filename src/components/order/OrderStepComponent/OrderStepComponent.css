@@ -177,6 +177,21 @@
   .orderFooterSelectionTabContentIcon {
     margin-right: 0px;
   }
+
+  .orderFooterSummaryTabText {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 5px;
+  }
+
+  .orderFooterSummaryTabText span {
+    padding-left: 5px;
+    padding-top: 0px;
+  }
+
+  .orderFooterSummaryTab {
+    height: 100px;
+  }
 }
 
 
@@ -264,7 +279,7 @@
   font-size: 16px;
   font-weight: 700;
   color: #fff;
-  background-color: rgb(144, 62, 129);
+  background-color: #000;
   outline: none;
   border: none;
   border-radius: 6px;
@@ -378,5 +393,21 @@
   }
   .orderStepList {
     margin-top: 40px!important;
+  }
+}
+
+@media(max-width: 400px) {
+  .orderFooterSummaryTab {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .orderFooterSummaryTabText {
+    font-size: 20px;
+  }
+  
+
+  .orderFooterSummaryTab span {
+    font-size: 13px;
   }
 }

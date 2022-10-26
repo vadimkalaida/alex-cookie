@@ -26,14 +26,14 @@ function App() {
       <HeaderComponent />
       <CookieFirstComponent />
       <CompanyUseComponent />
-      <CookieInfoComponent />
+      <VideoComponent />
       <PeopleComponent />
       <InfoAboutComponent />
       <GrabComponent />
       <OrderMainComponent mainRef={ mainRef } />
       <CustomerSayComponent />
       <GetNowComponent />
-      <VideoComponent />
+      <CookieInfoComponent />
       <FaqComponent />
       <FooterComponent />
     </main>

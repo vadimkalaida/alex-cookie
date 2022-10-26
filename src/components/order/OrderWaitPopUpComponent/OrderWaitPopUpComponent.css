@@ -1,0 +1,34 @@
+.orderWaitPopUp {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.53);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  overflow: hidden;
+  top: 0;
+  z-index: 999;
+}
+
+.orderWaitPopUpBlock {
+  border-radius: 5px;
+  width: 300px;
+  background: #fff;
+  padding: 25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.orderWaitPopUpTitle {
+  color: #232323;
+  font-weight: 400;
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+}
