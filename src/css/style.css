@@ -459,7 +459,21 @@ a {
 
 @media(max-width: 768px) {
     .section-people .title {
-        max-width: 450px;
+        max-width: 420px !important;
+        margin: auto;
+    }
+}
+
+@media(max-width: 500px) {
+    .section-people .title {
+        max-width: 360px !important;
+        margin: auto;
+    }
+}
+
+@media(max-width: 460px) {
+    .section-people .title {
+        max-width: 300px !important;
         margin: auto;
     }
 }
